@@ -1,171 +1,162 @@
-<!-- Commit Trigger: Version 2.3 — Final English with Videos & Animations -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Genesis Studio — Eudaimonia Vision</title>
-  <style>
-    * {margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
-    body {background-color:#000; color:#f5f3ef; scroll-behavior:smooth;}
-    section {padding:80px 5%; text-align:center; opacity:0; transform:translateY(20px); transition: all 1s ease-out;}
-    section.visible {opacity:1; transform:translateY(0);}
-    h1,h2,h3 {color:#d4af37; letter-spacing:1px;}
-    p {max-width:800px; margin:20px auto; line-height:1.6; font-size:1.1rem;}
-    ul {list-style-type:disc; max-width:600px; margin:20px auto; text-align:left;}
-    video, iframe, img {width:100%; max-width:900px; border-radius:20px; margin:30px auto; display:block; box-shadow:0 0 20px rgba(212,175,55,0.4); opacity:0; transform:translateY(20px); transition: all 1s ease-out;}
-    video.visible, iframe.visible, img.visible {opacity:1; transform:translateY(0);}
-    .hero {height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; background:radial-gradient(circle at center, #111 0%, #000 100%); background-attachment:fixed;}
-    .hero h1 {font-size:2.5rem; margin-bottom:20px;}
-    .hero-buttons {margin-top:30px;}
-    .btn {padding:12px 25px; margin:10px; border:1px solid #d4af37; color:#d4af37; background:transparent; border-radius:30px; cursor:pointer; transition:all 0.3s ease, box-shadow 0.3s ease;}
-    .btn:hover {background:#d4af37; color:#000; box-shadow:0 0 15px #d4af37;}
-    .projects h2 {margin-bottom:40px;}
-    .project {margin-bottom:80px;}
-    footer {padding:50px 10%; background:#111; color:#aaa;}
-    footer a {color:#d4af37; text-decoration:none; margin:0 10px;}
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Genesis Studio — Eudaimonia Vision</title>
+<meta name="description" content="Genesis Studio by Eudaimonia — a human-centered creative lab blending architecture, design, wellness, and storytelling. Explore our projects and join the vision." />
+<meta name="keywords" content="Genesis Studio, Eudaimonia, Sustainable Design, Healing, Women Empowerment, Architecture, Storytelling, Wellness" />
+<meta name="author" content="Eman El Shafie" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+  body { background-color: #000; color: #f5f3ef; scroll-behavior: smooth; }
+  section { padding: 80px 5%; text-align: center; opacity: 0; transform: translateY(20px); transition: all 1s ease-out; }
+  section.visible { opacity: 1; transform: translateY(0); }
+  h1,h2,h3 { color: #d4af37; letter-spacing: 1px; }
+  h1 { font-size: 2.5rem; margin-bottom: 20px; }
+  p { max-width: 800px; margin: 20px auto; line-height: 1.6; font-size: 1.1rem; }
+  ul { list-style-type: disc; max-width: 600px; margin: 20px auto; text-align: left; }
+  video, iframe, img { width: 100%; max-width: 900px; border-radius: 20px; margin: 30px auto; display: block; box-shadow: 0 0 20px rgba(212,175,55,0.4); opacity: 0; transform: translateY(20px); transition: all 1s ease-out; }
+  video.visible, iframe.visible, img.visible { opacity: 1; transform: translateY(0); }
+  .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: radial-gradient(circle at center, #111 0%, #000 100%); background-attachment: fixed; }
+  .btn { padding: 12px 25px; margin: 10px; border: 1px solid #d4af37; color: #d4af37; background: transparent; border-radius: 30px; cursor: pointer; transition: all 0.3s ease; text-decoration: none; }
+  .btn:hover { background: #d4af37; color: #000; }
+  footer { padding: 50px 10%; background: #111; color: #aaa; text-align: center; }
+  footer a { color: #d4af37; margin: 0 10px; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.7rem; }
+    h3 { font-size: 1.4rem; }
+    p { font-size: 1rem; }
+  }
+  @media (max-width: 480px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+  }
+</style>
 </head>
 <body>
 
-  <!-- HERO SECTION -->
-  <section class="hero" id="home">
-    <img src="https://raw.githubusercontent.com/shahdadham492-star/genesis-studio/main/1-web%20hero%20banner.png" alt="Genesis Studio Banner" class="fade-element">
-    <h1 class="fade-element">Genesis Studio — The Eudaimonia Vision</h1>
-    <p class="fade-element">Where emotional intelligence meets architecture, design, and healing innovation.</p>
-    <div class="hero-buttons fade-element">
-      <a href="#projects" class="btn">Invest in Tomorrow</a>
-      <a href="#contact" class="btn">Join Our Vision</a>
-    </div>
-  </section>
+<!-- HERO -->
+<section class="hero" id="home">
+  <img src="https://raw.githubusercontent.com/shahdadham492-star/genesis-studio/e00f5c77d711ea2e42f90bd37304c3912f49d0b4/1-web%20hero%20banner.png" alt="Genesis Studio Banner" loading="lazy"/>
+  <h1>Genesis Studio — The Eudaimonia Vision</h1>
+  <p>Where emotional intelligence meets architecture, design, and healing innovation.</p>
+  <div>
+    <a href="#projects" class="btn" aria-label="Go to Projects Section">Invest in Tomorrow</a>
+    <a href="#contact" class="btn" aria-label="Go to Contact Section">Join Our Vision</a>
+  </div>
+</section>
 
-  <!-- ABOUT / PHILOSOPHY -->
-  <section id="about">
-    <h2>Genesis Studio — Creative Lab</h2>
-    <p>
-      Genesis Studio by Eudaimonia is a creative center that unites all projects within our ecosystem.  
-      It is a human-centered and philosophical design lab that uses art, architecture, and sustainable branding to create transformative experiences.  
-      The studio does not only produce projects—it designs alternative living systems inspired by nature, forming the nucleus of a more balanced civilization.
-    </p>
-    <p><strong>Main Focus Areas:</strong></p>
-    <ul>
-      <li>Sustainable Architecture & Design</li>
-      <li>Empowering Women's Experiences</li>
-      <li>Mental & Physical Wellness through Design</li>
-      <li>Storytelling & Conscious Branding</li>
-    </ul>
-  </section>
+<!-- ABOUT -->
+<section id="about">
+  <h2>Genesis Studio — Creative Lab</h2>
+  <p>Genesis Studio by Eudaimonia is a human-centered creative lab uniting all projects in our ecosystem. We shape experiences across design, architecture, wellness, and storytelling.</p>
+  <ul>
+    <li>Sustainable Architecture & Design</li>
+    <li>Empowering Women's Experiences</li>
+    <li>Mental & Physical Wellness through Design</li>
+    <li>Storytelling & Conscious Branding</li>
+  </ul>
+</section>
 
-  <!-- ECOSYSTEM -->
-  <section id="ecosystem">
-    <h2>The Eudaimonia System</h2>
-    <p>Each project serves a dimension of human experience, from self-awareness to natural beauty.  
-    Together, they form a complete and integrated Eudaimonia System.</p>
-  </section>
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Our Core Projects</h2>
 
-  <!-- PROJECTS SECTION -->
-  <section id="projects" class="projects">
-    <h2>Our Core Projects</h2>
+<div class="project">
+  <h3>Launch Genesis Studio</h3>
+  <p>Introduction to the Genesis ecosystem and its main conceptual lab.</p>
+  <iframe src="https://drive.google.com/file/d/1BLizVeJ59JYO9JiVGuXVmANxcgeC2nwp/preview" width="640" height="360" allow="autoplay" loading="lazy" title="Launch Genesis Studio"></iframe>
+</div>
 
-    <!-- 1. SHE NARRITES -->
-    <div class="project">
-      <h3>1. SHE NARRITES — Women’s Storytelling Platform</h3>
-      <p>A digital platform that allows women worldwide to share life stories interactively, turning female narratives into collective healing and empowerment.</p>
-      <iframe src="https://drive.google.com/file/d/1BLizVeJ59JYO9JiVGuXVmANxcgeC2nwp/preview" width="640" height="360" allow="autoplay"></iframe>
-    </div>
+<div class="project">
+  <h3>Invest in Tomorrow</h3>
+  <p>The complete future-forward vision for the Eudaimonia System.</p>
+  <iframe src="https://drive.google.com/file/d/1ETFk2eSBO2ss5u1BgPX5YVPz5-a5rqQa/preview" width="640" height="360" allow="autoplay" loading="lazy" title="Invest in Tomorrow"></iframe>
+</div>
 
-    <!-- 2. RAHET BALLY CAFE -->
-    <div class="project">
-      <h3>2. RAHET BALLY CAFE — Global Women’s Cafés</h3>
-      <p>Offering relaxing spaces for women in busy cities, combining warm lighting, plants, and soothing music to enhance daily wellness.</p>
-      <iframe src="https://drive.google.com/file/d/1WRvs1JA6tcg3ZnsK541wme8-UnhQxmko/preview" width="640" height="360" allow="autoplay"></iframe>
-    </div>
+<div class="project">
+  <h3>Follow the Eudaimonia Projects — Real Impact</h3>
+  <p>Full visual overview of the main ecosystem’s architecture and project flow.</p>
+  <iframe src="https://drive.google.com/file/d/1cGx3QFiE3EP7HchLG2SH2KhQV8OQbaf2/preview" width="640" height="360" allow="autoplay" loading="lazy" title="Follow Eudaimonia Projects"></iframe>
+</div>
 
-    <!-- 3. EUDIMONIA HEALING GAME -->
-    <div class="project">
-      <h3>3. EUDIMONIA HEALING GAME</h3>
-      <p>An interactive digital game blending psychology, art, and inner journeying to convert mental wellness concepts into an enjoyable healing experience.</p>
-      <iframe src="https://drive.google.com/file/d/1MukgR7vK1GuFOPRR9WGU8FrGq4y8VwaS/preview" width="640" height="360" allow="autoplay"></iframe>
-    </div>
+<div class="project">
+  <h3>She Narrites — Women’s Storytelling Platform</h3>
+  <img src="https://raw.githubusercontent.com/shahdadham492-star/genesis-studio/e00f5c77d711ea2e42f90bd37304c3912f49d0b4/SheNarrates%20banner.png" alt="She Narrites Banner" loading="lazy"/>
+  <p>Main digital project allowing women worldwide to share life stories interactively.</p>
+  <iframe src="https://drive.google.com/file/d/1BLizVeJ59JYO9JiVGuXVmANxcgeC2nwp/preview" width="640" height="360" allow="autoplay" loading="lazy" title="She Narrites Video"></iframe>
+</div>
 
-    <!-- 4. FIRST SANCTUARY -->
-    <div class="project">
-      <h3>4. FIRST SANCTUARY — Global Healing Architecture</h3>
-      <p>The first architectural model implementing Eudaimonia philosophy, integrating art, nature, and architecture to create a full healing experience.</p>
-      <iframe src="https://drive.google.com/file/d/1b2PMasxx1Ojr0DQCCUatRaQRQ-pQJ4kU/preview" width="640" height="360" allow="autoplay"></iframe>
-    </div>
+<div class="project">
+  <h3>Fluid Dynamics Canvas — Experimental Meditation Tool</h3>
+  <img src="https://raw.githubusercontent.com/shahdadham492-star/genesis-studio/e00f5c77d711ea2e42f90bd37304c3912f49d0b4/fluied%20dynamic%20canvas%20banner.png" alt="Fluid Dynamics Banner" loading="lazy"/>
+  <p>Transforms sound and emotion into light and motion to restore energy and calm.</p>
+  <iframe src="https://drive.google.com/file/d/1_1uMMLXbae0Oe4C22sCYc1PAfnjEj15F/preview" width="640" height="360" allow="autoplay" loading="lazy" title="Fluid Dynamics Video"></iframe>
+</div>
 
-    <!-- 5. GUIDE THERAPY SERIES -->
-    <div class="project">
-      <h3>5. GUIDE THERAPY SERIES — Therapeutic & Meditation Chairs</h3>
-      <p>An innovative furniture series combining form, function, and spirit to improve life quality, especially for migraine and ADHD users.</p>
-      <img src="https://raw.githubusercontent.com/shahdadham492-star/genesis-studio/main/Albedo%20Cocoon.png" alt="Guide Chair 1">
-      <img src="https://raw.githubusercontent.com/shahdadham492-star/genesis-studio/main/Albedo%20Cocoon.png" alt="Guide Chair 2">
-      <img src="https://raw.githubusercontent.com/shahdadham492-star/genesis-studio/main/chair%20of%20light.png" alt="Guide Chair 3">
-    </div>
+<div class="project">
+  <h3>Eudaimonia Healing Game</h3>
+  <p>An interactive digital game blending psychology, art, and inner journeying to convert mental wellness into enjoyable healing experience.</p>
+  <iframe src="https://drive.google.com/file/d/1MukgR7vK1GuFOPRR9WGU8FrGq4y8VwaS/preview" width="640" height="360" allow="autoplay" loading="lazy" title="Eudaimonia Healing Game"></iframe>
+</div>
 
-    <!-- 6. JUST HEALTHY -->
-    <div class="project">
-      <h3>6. JUST HEALTHY — Natural Beauty Brand</h3>
-      <p>A beauty brand blending science, plants, and vital energy, empowering women to return to natural self-care.</p>
-      <iframe src="https://drive.google.com/file/d/1G-Vxd3TNmpJTqgZIMT77VLSL9GFh9FlV/preview" width="640" height="360" allow="autoplay"></iframe>
-    </div>
+<div class="project">
+  <h3>First Sanctuary — Global Healing Architecture</h3>
+  <p>Architectural model implementing Eudaimonia philosophy, integrating art, nature, and architecture for a full healing experience.</p>
+  <iframe src="https://drive.google.com/file/d/1b2PMasxx1Ojr0DQCCUatRaQRQ-pQJ4kU/preview" width="640" height="360" allow="autoplay" loading="lazy" title="First Sanctuary Video"></iframe>
+</div>
 
-    <!-- 7. FLUID DYNAMICS CANVAS -->
-    <div class="project">
-      <h3>7. FLUID DYNAMICS CANVAS — Experimental Meditation Tool</h3>
-      <p>Transforms sound and emotion into light and motion to restore energy and calm.</p>
-      <iframe src="https://drive.google.com/file/d/1_1uMMLXbae0Oe4C22sCYc1PAfnjEj15F/preview" width="640" height="360" allow="autoplay"></iframe>
-    </div>
+<div class="project">
+  <h3>Rahet Bally Cafe — Global Women’s Cafés</h3>
+  <p>Relaxing spaces combining warm lighting, plants, and soothing music to enhance daily wellness.</p>
+  <iframe src="https://drive.google.com/file/d/1WRvs1JA6tcg3ZnsK541wme8-UnhQxmko/preview" width="640" height="360" allow="autoplay" loading="lazy" title="Rahet Bally Cafe Video"></iframe>
+</div>
 
-  </section>
+<div class="project">
+  <h3>Just Healthy — Natural Beauty Brand</h3>
+  <p>Beauty brand blending science, plants, and vital energy, empowering women to return to natural self-care.</p>
+  <iframe src="https://drive.google.com/file/d/1G-Vxd3TNmpJTqgZIMT77VLSL9GFh9FlV/preview" width="640" height="360" allow="autoplay" loading="lazy" title="Just Healthy Video"></iframe>
+</div>
 
-  <!-- PHILOSOPHY + CONCEPT + INVEST -->
-  <section id="concept">
-    <h2>Philosophy & Concept</h2>
-    <img src="https://raw.githubusercontent.com/shahdadham492-star/genesis-studio/main/4%20-Philosophy%20%20Sustainability.png" alt="Philosophy">
-    <iframe src="https://drive.google.com/file/d/1ETFk2eSBO2ss5u1BgPX5YVPz5-a5rqQa/preview" width="640" height="360" allow="autoplay"></iframe>
-    <iframe src="https://drive.google.com/file/d/1cGx3QFiE3EP7HchLG2SH2KhQV8OQbaf2/preview" width="640" height="360" allow="autoplay"></iframe>
-    <iframe src="https://drive.google.com/file/d/1uZoK_UR14RJ7-OC563y5WjFxkyiJILtz/preview" width="640" height="360" allow="autoplay"></iframe>
-  </section>
+<div class="project">
+  <h3>Judy Chair Collection — Therapeutic & Meditation Chairs</h3>
+  <p>An innovative furniture series combining form, function, and spirit to improve life quality, especially for migraine and ADHD users.</p>
+  <img src="https://raw.githubusercontent.com/shahdadham492-star/genesis-studio/e00f5c77d711ea2e42f90bd37304c3912f49d0b4/Albedo%20Cocoon.png" alt="Albedo Cocoon Chair" loading="lazy"/>
+  <img src="https://raw.githubusercontent.com/shahdadham492-star/genesis-studio/e00f5c77d711ea2e42f90bd37304c3912f49d0b4/chair%20of%20light.png" alt="Chair of Light" loading="lazy"/>
+  <img src="https://raw.githubusercontent.com/shahdadham492-star/genesis-studio/e00f5c77d711ea2e42f90bd37304c3912f49d0b4/The%20Migraine%20Anchor.png" alt="The Migraine Anchor Chair" loading="lazy"/>
+</div>
 
-  <!-- FINAL CTA -->
-  <section id="contact">
-    <h2>Join Our Vision</h2>
-    <p>Be part of our sustainable design journey and the Eudaimonia experience.</p>
-    <div class="hero-buttons">
-      <a href="mailto:gensisstudioe@gmail.com" class="btn">📩 Email</a>
-      <a href="https://www.linkedin.com/in/eman-el-shafie-297a8a396" class="btn" target="_blank">🔗 LinkedIn</a>
-    </div>
-  </section>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Genesis Studio — Designed by Eman El Shafie</p>
-  </footer>
+<!-- CONTACT -->
+<section id="contact">
+<h2>Join Our Vision</h2>
+<p>Be part of our sustainable design journey and the Eudaimonia experience.</p>
+<a href="mailto:gensisstudioe@gmail.com" class="btn" aria-label="Send Email">Email</a>
+<a href="https://www.linkedin.com/in/eman-el-shafie-297a8a396" class="btn" target="_blank" aria-label="Visit LinkedIn Profile">LinkedIn</a>
+</section>
 
-  <script>
-    // Fade-In Observer for Sections, Images, iframes
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add("visible");
-        }
-      });
-    });
+<footer>
+<p>© 2025 Genesis Studio — Designed by Eman El Shafie</p>
+<p>
+  <a href="#home">Home</a> | 
+  <a href="#about">About</a> | 
+  <a href="#projects">Projects</a> | 
+  <a href="#contact">Contact</a>
+</p>
+</footer>
 
-    document.querySelectorAll('section, img, iframe').forEach(el => {
-      observer.observe(el);
-    });
-
-    // Simple Parallax for Hero Section Image
-    window.addEventListener('scroll', function(){
-      const heroImg = document.querySelector('.hero img');
-      if(heroImg){
-        heroImg.style.transform = 'translateY(' + window.scrollY * 0.25 + 'px)';
-      }
-    });
-  </script>
-
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('visible'); });
+});
+document.querySelectorAll('section, img, iframe').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
