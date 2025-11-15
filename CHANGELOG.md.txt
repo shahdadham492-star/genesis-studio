@@ -1,0 +1,10 @@
+# Changelog — Genesis Studio
+
+## [v2.3] — 2025-11-15
+- Updated project descriptions
+- Reorganized projects into Core / Showcase / SaaS
+- Added README.md for investor overview
+
+## [v2.2] — 2025-10-30
+- Initial landing page release
+- Added hero section, projects, videos, images
